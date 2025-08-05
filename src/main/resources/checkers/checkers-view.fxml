@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="checkerboard" prefHeight="640.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkers.CheckersController">
+   <children>
+      <Group fx:id="squaresBlackWhite" layoutY="560.0">
+         <children>
+            <HBox fx:id="row1">
+               <children>
+                  <Rectangle fx:id="a1Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b1Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c1Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d1Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e1Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f1Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g1Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="h1Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row2" layoutY="-80.0" scaleX="-1.0">
+               <children>
+                  <Rectangle fx:id="h2Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g2Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f2Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e2Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d2Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c2Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b2Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="a2Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row3" layoutY="-160.0">
+               <children>
+                  <Rectangle fx:id="a3Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b3Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c3Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d3Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e3Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f3Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g3Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="h3Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row4" layoutY="-240.0" scaleX="-1.0">
+               <children>
+                  <Rectangle fx:id="h4Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g4Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f4Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e4Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d4Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c4Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b4Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="a4Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row5" layoutY="-320.0">
+               <children>
+                  <Rectangle fx:id="a5Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b5Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c5Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d5Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e5Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f5Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g5Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="h5Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row6" layoutY="-400.0" scaleX="-1.0">
+               <children>
+                  <Rectangle fx:id="h6Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g6Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f6Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e6Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d6Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c6Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b6Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="a6Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row7" layoutY="-480.0">
+               <children>
+                  <Rectangle fx:id="a7Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b7Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c7Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d7Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e7Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f7Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g7Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="h7Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+            <HBox fx:id="row8" layoutY="-560.0" scaleX="-1.0">
+               <children>
+                  <Rectangle fx:id="h8Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="g8Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="f8Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="e8Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="d8Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="c8Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="b8Square" fill="BLACK" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+                  <Rectangle fx:id="a8Square" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="80.0" />
+               </children>
+            </HBox>
+         </children>
+      </Group>
+      <Group fx:id="moveOptions">
+         <children>
+            <Circle fx:id="move25" centerX="40.0" centerY="120.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked25" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move31" centerX="440.0" centerY="40.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked31" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move32" centerX="600.0" centerY="40.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked32" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move28" centerX="520.0" centerY="120.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked28" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move13" centerX="120.0" centerY="360.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked13" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move4" centerX="520.0" centerY="600.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked4" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move24" centerX="600.0" centerY="200.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked24" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move15" centerX="440.0" centerY="360.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked15" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move17" centerX="40.0" centerY="280.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked17" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move22" centerX="280.0" centerY="200.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked22" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move27" centerX="360.0" centerY="120.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked27" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move29" centerX="120.0" centerY="40.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked29" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move10" centerX="200.0" centerY="440.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked10" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move12" centerX="520.0" centerY="440.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked12" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move16" centerX="600.0" centerY="360.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked16" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move19" centerX="360.0" centerY="280.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked19" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move5" centerX="120.0" centerY="520.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked5" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move2" centerX="200.0" centerY="600.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked2" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move7" centerX="440.0" centerY="520.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked7" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move14" centerX="280.0" centerY="360.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked14" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move9" centerX="40.0" centerY="440.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked9" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move6" centerX="280.0" centerY="520.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked6" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move11" centerX="360.0" centerY="440.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked11" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move26" centerX="200.0" centerY="120.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked26" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move21" centerX="120.0" centerY="200.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked21" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move30" centerX="280.0" centerY="40.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked30" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move20" centerX="520.0" centerY="280.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked20" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move23" centerX="440.0" centerY="200.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked23" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move1" centerX="40.0" centerY="600.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked1" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move3" centerX="360.0" centerY="600.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked3" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move8" centerX="600.0" centerY="520.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked8" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+            <Circle fx:id="move18" centerX="200.0" centerY="280.0" disable="true" fill="DODGERBLUE" onMouseClicked="#moveClicked18" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" visible="false" />
+         </children>
+      </Group>
+      <Group fx:id="whitePieces">
+         <children>
+            <ImageView fx:id="captureWhite1" fitHeight="80.0" fitWidth="80.0" layoutX="0.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite2" fitHeight="80.0" fitWidth="80.0" layoutX="160.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite3" fitHeight="80.0" fitWidth="80.0" layoutX="320.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite4" fitHeight="80.0" fitWidth="80.0" layoutX="480.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite5" fitHeight="80.0" fitWidth="80.0" layoutX="80.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite6" fitHeight="80.0" fitWidth="80.0" layoutX="240.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite7" fitHeight="80.0" fitWidth="80.0" layoutX="400.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite8" fitHeight="80.0" fitWidth="80.0" layoutX="560.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite9" fitHeight="80.0" fitWidth="80.0" layoutX="0.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite10" fitHeight="80.0" fitWidth="80.0" layoutX="160.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite11" fitHeight="80.0" fitWidth="80.0" layoutX="320.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureWhite12" fitHeight="80.0" fitWidth="80.0" layoutX="480.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="manWhite1" centerX="40.0" centerY="600.0"  fill="WHITE" onMouseClicked="#manWhiteClicked1" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite2" centerX="200.0" centerY="600.0" fill="WHITE" onMouseClicked="#manWhiteClicked2" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite5" centerX="120.0" centerY="520.0" fill="WHITE" onMouseClicked="#manWhiteClicked5" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite3" centerX="360.0" centerY="600.0" fill="WHITE" onMouseClicked="#manWhiteClicked3" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite8" centerX="600.0" centerY="520.0" fill="WHITE" onMouseClicked="#manWhiteClicked8" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite12" centerX="520.0" centerY="440.0" fill="WHITE" onMouseClicked="#manWhiteClicked12" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite4" centerX="520.0" centerY="600.0" fill="WHITE" onMouseClicked="#manWhiteClicked4" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite10" centerX="200.0" centerY="440.0" fill="WHITE" onMouseClicked="#manWhiteClicked10" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite9" centerX="40.0" centerY="440.0" fill="WHITE" onMouseClicked="#manWhiteClicked9" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite11" centerX="360.0" centerY="440.0" fill="WHITE" onMouseClicked="#manWhiteClicked11" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite7" centerX="440.0" centerY="520.0" fill="WHITE" onMouseClicked="#manWhiteClicked7" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manWhite6" centerX="280.0" centerY="520.0" fill="WHITE" onMouseClicked="#manWhiteClicked6" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="kingWhite1" fitHeight="40.0" fitWidth="40.0" layoutX="20.0" layoutY="580.0" onMouseClicked="#manWhiteClicked1" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite2" fitHeight="40.0" fitWidth="40.0" layoutX="180.0" layoutY="580.0" onMouseClicked="#manWhiteClicked2" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite3" fitHeight="40.0" fitWidth="40.0" layoutX="340.0" layoutY="580.0" onMouseClicked="#manWhiteClicked3" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite4" fitHeight="40.0" fitWidth="40.0" layoutX="500.0" layoutY="580.0" onMouseClicked="#manWhiteClicked4" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite5" fitHeight="40.0" fitWidth="40.0" layoutX="100.0" layoutY="500.0" onMouseClicked="#manWhiteClicked5" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite6" fitHeight="40.0" fitWidth="40.0" layoutX="260.0" layoutY="500.0" onMouseClicked="#manWhiteClicked6" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite7" fitHeight="40.0" fitWidth="40.0" layoutX="420.0" layoutY="500.0" onMouseClicked="#manWhiteClicked7" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite8" fitHeight="40.0" fitWidth="40.0" layoutX="580.0" layoutY="500.0" onMouseClicked="#manWhiteClicked8" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite9" fitHeight="40.0" fitWidth="40.0" layoutX="20.0" layoutY="420.0" onMouseClicked="#manWhiteClicked9" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite10" fitHeight="40.0" fitWidth="40.0" layoutX="180.0" layoutY="420.0" onMouseClicked="#manWhiteClicked10" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite11" fitHeight="40.0" fitWidth="40.0" layoutX="340.0" layoutY="420.0" onMouseClicked="#manWhiteClicked11" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingWhite12" fitHeight="40.0" fitWidth="40.0" layoutX="500.0" layoutY="420.0" onMouseClicked="#manWhiteClicked12" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/white%20King.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="redPieces" disable="true">
+         <children>
+            <ImageView fx:id="captureRed1" fitHeight="80.0" fitWidth="80.0" layoutX="560.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed2" fitHeight="80.0" fitWidth="80.0" layoutX="400.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed3" fitHeight="80.0" fitWidth="80.0" layoutX="240.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed4" fitHeight="80.0" fitWidth="80.0" layoutX="80.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed5" fitHeight="80.0" fitWidth="80.0" layoutX="480.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed6" fitHeight="80.0" fitWidth="80.0" layoutX="320.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed7" fitHeight="80.0" fitWidth="80.0" layoutX="160.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed8" fitHeight="80.0" fitWidth="80.0" layoutX="0.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed9" fitHeight="80.0" fitWidth="80.0" layoutX="560.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed10" fitHeight="80.0" fitWidth="80.0" layoutX="400.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed11" fitHeight="80.0" fitWidth="80.0" layoutX="240.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="captureRed12" fitHeight="80.0" fitWidth="80.0" layoutX="80.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@King%20images/saw.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="manRed8" centerX="40.0" centerY="120.0" fill="RED" onMouseClicked="#manRedClicked8" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed6" centerX="360.0" centerY="120.0" fill="RED" onMouseClicked="#manRedClicked6" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed2" centerX="440.0" centerY="40.0" fill="RED" onMouseClicked="#manRedClicked2" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed11" centerX="280.0" centerY="200.0" fill="RED" onMouseClicked="#manRedClicked11" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed10" centerX="440.0" centerY="200.0" fill="RED" onMouseClicked="#manRedClicked10" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed5" centerX="520.0" centerY="120.0" fill="RED" onMouseClicked="#manRedClicked5" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed9" centerX="600.0" centerY="200.0" fill="RED" onMouseClicked="#manRedClicked9" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed7" centerX="200.0" centerY="120.0" fill="RED" onMouseClicked="#manRedClicked7" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed4" centerX="120.0" centerY="40.0" fill="RED" onMouseClicked="#manRedClicked4" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed3" centerX="280.0" centerY="40.0" fill="RED" onMouseClicked="#manRedClicked3" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed1" centerX="600.0" centerY="40.0" fill="RED" onMouseClicked="#manRedClicked1" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="manRed12" centerX="120.0" centerY="200.0" fill="RED" onMouseClicked="#manRedClicked12" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fx:id="kingRed1" fitHeight="40.0" fitWidth="40.0" layoutX="580.0" layoutY="20.0" onMouseClicked="#manRedClicked1" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed2" fitHeight="40.0" fitWidth="40.0" layoutX="420.0" layoutY="20.0" onMouseClicked="#manRedClicked2" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed3" fitHeight="40.0" fitWidth="40.0" layoutX="260.0" layoutY="20.0" onMouseClicked="#manRedClicked3" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed4" fitHeight="40.0" fitWidth="40.0" layoutX="100.0" layoutY="20.0" onMouseClicked="#manRedClicked4" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed5" fitHeight="40.0" fitWidth="40.0" layoutX="500.0" layoutY="100.0" onMouseClicked="#manRedClicked5" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed6" fitHeight="40.0" fitWidth="40.0" layoutX="340.0" layoutY="100.0" onMouseClicked="#manRedClicked6" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed7" fitHeight="40.0" fitWidth="40.0" layoutX="180.0" layoutY="100.0" onMouseClicked="#manRedClicked7" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed8" fitHeight="40.0" fitWidth="40.0" layoutX="20.0" layoutY="100.0" onMouseClicked="#manRedClicked8" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed9" fitHeight="40.0" fitWidth="40.0" layoutX="580.0" layoutY="180.0" onMouseClicked="#manRedClicked9" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed10" fitHeight="40.0" fitWidth="40.0" layoutX="420.0" layoutY="180.0" onMouseClicked="#manRedClicked10" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed11" fitHeight="40.0" fitWidth="40.0" layoutX="260.0" layoutY="180.0" onMouseClicked="#manRedClicked11" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="kingRed12" fitHeight="40.0" fitWidth="40.0" layoutX="100.0" layoutY="180.0" onMouseClicked="#manRedClicked12" pickOnBounds="true" preserveRatio="true" scaleY="-1.0" visible="false">
+               <image>
+                  <Image url="@King%20images/red%20king.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="winningGroup" disable="true" visible="false">
+         <Label fx:id="winningText" layoutX="300.0" layoutY="295.0" prefHeight="20.0" prefWidth="40.0" text="White"/>
+         <Label layoutX="300.0" layoutY="305.0" prefHeight="20.0" prefWidth="40.0" text="Won"/>
+      </Group>
+   </children>
+</AnchorPane>
